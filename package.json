@@ -1,11 +1,20 @@
 {
   "name": "fastcampus_ui",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "./dist/fastcampus_ui.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "package": "vue-cli-service build --target lib --name fastcampus_ui ./src/index.js"
   },
   "dependencies": {
     "core-js": "^3.3.2",
@@ -29,8 +38,7 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
-      "@vue/standard"
+      "plugin:vue/essential"
     ],
     "rules": {},
     "parserOptions": {
