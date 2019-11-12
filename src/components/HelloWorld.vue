@@ -72,7 +72,7 @@
 </template>
 
 <script>
-import Banner from "@/packages/Banner/Banner";
+import Banner from "@/packages/Banner/src/Banner";
 
 export default {
   name: "HelloWorld",
