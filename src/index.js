@@ -1,7 +1,8 @@
 import Banner from "./packages/Banner/index";
+import TimeSelect from "./packages/TimeSelect/index";
 
-const components = [Banner];
-const version = "0.1.11";
+const components = [Banner, TimeSelect];
+const version = "0.1.15";
 
 const install = function(Vue) {
   console.log("全局安装fastcampus_ui组件");
@@ -21,4 +22,4 @@ export default {
   install
 };
 
-export { Banner };
+export { Banner, TimeSelect };
