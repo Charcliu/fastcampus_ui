@@ -1,5 +1,5 @@
 <template>
-  <el-form>
+  <div>
     <el-col :xs="24" :sm="12" :md="8" :lg="6">
       <el-form-item :label="label">
         <el-select v-model="timeRange" @change="handlerChange" placeholder="请选择消费时间">
@@ -28,7 +28,7 @@
         ></el-date-picker>
       </el-form-item>
     </el-col>
-  </el-form>
+  </div>
 </template>
 
 <script>

@@ -1,7 +1,9 @@
 <template>
   <div class="hello">
     <Banner></Banner>
-    <TimeSelect label="消费时间" :startTime.sync="showStartTime" :endTime.sync="showEndTime"></TimeSelect>
+    <el-form>
+      <TimeSelect label="消费时间" :startTime.sync="showStartTime" :endTime.sync="showEndTime"></TimeSelect>
+    </el-form>
   </div>
 </template>
 
