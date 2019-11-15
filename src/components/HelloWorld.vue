@@ -2,14 +2,21 @@
   <div class="hello">
     <Banner></Banner>
     <el-form>
-      <TimeSelect label="消费时间" :startTime.sync="showStartTime" :endTime.sync="showEndTime"></TimeSelect>
+      <TimeSelect
+        label="消费时间"
+        :startTime.sync="showStartTime"
+        :endTime.sync="showEndTime"
+      ></TimeSelect>
     </el-form>
+    <!-- v-model 相当于 :value="exceptionValue" @input="exceptionValue = $event" -->
+    <Exception v-model="exceptionValue"></Exception>
   </div>
 </template>
 
 <script>
 import Banner from "@/packages/Banner/src/Banner";
 import TimeSelect from "@/packages/TimeSelect/src/TimeSelect";
+import Exception from "@/packages/Exception/src/Exception";
 
 export default {
   name: "HelloWorld",
@@ -19,7 +26,8 @@ export default {
   data() {
     return {
       showStartTime: "",
-      showEndTime: ""
+      showEndTime: "",
+      exceptionValue: ""
     };
   },
   computed: {
@@ -32,7 +40,8 @@ export default {
   },
   components: {
     Banner,
-    TimeSelect
+    TimeSelect,
+    Exception
   }
 };
 </script>
