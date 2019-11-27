@@ -2,7 +2,7 @@ import Exception from "./src/Exception.vue";
 
 /* istanbul ignore next */
 Exception.install = function(Vue) {
-  console.log("单独安装Exception组件");
+  console.log("Install Exception");
   Vue.component(Exception.name, Exception);
 };
 

@@ -3,10 +3,10 @@ import TimeSelect from "./packages/TimeSelect/index";
 import Exception from "./packages/Exception/index";
 
 const components = [Banner, TimeSelect, Exception];
-const version = "0.1.21";
+const version = "0.1.22";
 
 const install = function(Vue) {
-  console.log("全局安装fastcampus_ui组件");
+  console.log("global install fastcampus_ui");
   components.forEach(component => {
     Vue.component(component.name, component);
   });
